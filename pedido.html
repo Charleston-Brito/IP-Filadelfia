@@ -26,7 +26,7 @@
 </head>
 <body>
   <!-- Header Wrapper -->
-  <div class="wrapper style1">
+  <div class="wrapper style10">
 			
     <!-- Header -->
       <div id="header">
@@ -60,7 +60,7 @@
                 </ul>
               </li>
               <li><a href="ministerios.html">Ministérios</a></li>
-              <li><a href="artigos.html">Artigos</a></li>
+              <li><a href="ensino.html">Ensino</a></li>
               <li><a href="contribuicoes.html">Contribuições</a></li>
               <li><a href="pedido.html">Pedidos de Oração</a></li>
             </ul>
@@ -83,6 +83,7 @@
   
 
 <!-- /.white-wrapper -->
+<form name="f_cadastro" action="#" method="GET">
 
 <div class="light-wrapper">
   <div class="container inner">
@@ -93,27 +94,27 @@
       </div>
 
       <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-        <p><label for="cNome">Nome:</label> 
-        <input type="text" name="tNome" id="cNome" size="20" maxlength="40" placeholder="Nome Completo*" required/></p>
-        <p><label for="cTel">Telefone:</label> 
-        <input type="text" name="tTel" id="cTel" size="14" maxlength="14" placeholder="Telefone para contato*" required/></p>  
-        <p><label for="cMail">E-mail:</label>
-        <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail"/></p>
-    <fieldset><legend>Sexo:</legend>
-        <input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label></br>
-        <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
-    </fieldset>
-        <p><label for="cNasc">Data de Nascimento:</label>
-        <input type="date" name="tNasc" id="cNasc"/></p>
-    </fieldset>
+          <p><label for="cNome">Nome:</label> 
+          <input type="text" name="tNome" id="cNome" size="20" maxlength="40" placeholder="Nome Completo*" required/></p>
+          <p><label for="cTel">Telefone:</label> 
+          <input type="text" name="tTel" id="cTel" size="14" maxlength="14" placeholder="Telefone para contato*" required/></p>  
+          <p><label for="cMail">E-mail:</label>
+          <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail"/></p>
+        <fieldset><legend>Sexo:</legend>
+          <input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label></br>
+          <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+        </fieldset>
+          <p><label for="cNasc">Data de Nascimento:</label>
+          <input type="date" name="tNasc" id="cNasc"/></p>
+      </fieldset>
 
            <textarea name="message" placeholder="Qual o seu pedido de oração?"></textarea>
-          
+         
           <!--/.radio-set -->
-          <input type="image" src="images/botao-enviar.png" data-error="Ocorreu um erro, preencha novamente os campos" data-processing="Enviando..." data-success="Estaremos orando por você e seu pedido. Deus abençoe!"/> 
+          <input type="image" src="images/botao-enviar.png" data-error="Ocorreu um erro, preencha novamente os campos" data-processing="Enviando..." onclick="alert('Estaremos orando por você e seu pedido. Deus abençoe!');"/> 
           
           <footer class="notification-box"></footer>
-        </form>
+</form>
         <!--/.vanilla-form --> 
       </div>
       <!--/.form-container --> 
@@ -125,7 +126,7 @@
 <div id="footer">
   <section class="container">
     <header class="major">
-      <h2>Siga-nos</h2>
+      <h6>Siga-nos</h6>
       <span class="byline">"Oh! Provai e vede que o SENHOR é bom; bem-aventurado o homem que nEle se refugia. Salmos 34:8"</span>
     </header>
     <ul class="icons">
